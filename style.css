@@ -1,0 +1,111 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+* {
+    font-family: Arial;
+}
+
+header p {
+    margin-left: 20px;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header img {
+    height: 150px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+footer p {
+    color: gray;
+    font-style: italic;
+}
+
+footer hr {
+    border: 1px solid gray;
+    width: 90%;
+}
+
+header hr {
+    display: none;
+    border: 1px solid white;
+    width: 100%;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+main {
+    overflow-x: auto;
+}
+
+th, tr, td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 20px 40px;
+}
+
+thead {
+    background-color: black;
+    
+}
+
+th {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header hr {
+        display: block;
+        margin-left: 30px;
+    }
+    
+    header a {
+        padding: 30px;
+    }
+}
